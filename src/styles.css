@@ -1,3 +1,4 @@
+/* General Styles */
 * {
   box-sizing: border-box;
 }
@@ -9,11 +10,12 @@ body {
 }
 
 .app-container {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 20px;
   }  
 
+  /* Header Section */
 .header {
     display: flex;
     justify-content: center;
@@ -27,6 +29,7 @@ body {
     height: auto;
   }  
 
+  /* Flashcards Section */
 .flashcards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -64,6 +67,7 @@ div.selected {
   font-weight: 700;
 }
 
+/* Hover Effects */
 .flashcards div:hover {
     transform: scale(1.05);
     background-color: #d1e3f2;
@@ -76,13 +80,14 @@ div.selected:hover {
   background-color: #3b82f6;
 }
 
+/* Footer Section */
 .footer {
-    background-color: #e2e8f0; /* Soft light blue background */
+    background-color: #e2e8f0;
     padding: 20px;
     text-align: center;
     margin-top: 20px;
-    border-top: 1px solid #cbd5e1; /* Soft blue-gray border at the top */
-    color: #334155; /* Darker blue-gray for text */
+    border-top: 1px solid #cbd5e1;
+    color: #334155;
   }
   
   .footer p {
@@ -100,10 +105,49 @@ div.selected:hover {
     color: #1d4ed8;
   }
   
+/* Media Queries */
 
+/* Mobile screens */
 @media (max-width: 600px) {
     .flashcards {
       grid-template-columns: 1fr;
       gap: 15px;
+    }
+  }
+
+/* Medium-sized screens, like desktops */
+@media (min-width: 1600px) and (max-width:2400px) {
+    .app-container {
+      max-width: 1000px;
+    }
+  
+    .flashcards div {
+      font-size: 18px;
+      padding: 25px;
+    }
+  }
+
+/* Larger screens, like TVs */
+@media (min-width: 2400px) {
+    .app-container {
+      max-width: 2000px;
+    }
+  
+    .flashcards {
+      gap: 30px;
+    }
+  
+    .flashcards div {
+      font-size: 20px;
+      padding: 30px;
+      height: auto;
+    }
+  
+    .header, .footer {
+      padding: 30px;
+    }
+  
+    .logo {
+      width: 200px;
     }
   }
