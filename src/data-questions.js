@@ -44,7 +44,7 @@ export const questions = [
     {
         id: uuidv4(),
         question: "What is Git used for?",
-        answer: "Tracking changes and working with others on code.",
+        answer: "Tracking changes and working with other programmers on code.",
     },
     {
         id: uuidv4(),
