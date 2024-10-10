@@ -3,7 +3,7 @@ import { v4 as uuidv4 } from 'uuid';
 export const questions = [
     {
         id: uuidv4(),
-        question: "What is the most popular programming language for web development?",
+        question: "What is the most popular language for web development?",
         answer: "JavaScript",
     },
     {
@@ -60,5 +60,25 @@ export const questions = [
         id: uuidv4(),
         question: "What is a ‘full-stack developer’?",
         answer: "A developer who works on both the front-end and back-end.",
+    },
+    {
+        id: uuidv4(),
+        question: "How much does a 'full-stack developer' earn annually?",
+        answer: "Typically between 700k and 1.2m NOK per annum",
+    },
+    {
+        id: uuidv4(),
+        question: "How long ago was ECIT-Digital started?",
+        answer: "Approximately 4 years ago",
+    },
+    {
+        id: uuidv4(),
+        question: "In how many countries is ECIT-Digital present today?",
+        answer: "87",
+    },
+    {
+        id: uuidv4(),
+        question: "How many nationalities are represented by ECIT-Digital employees?",
+        answer: "7",
     },
 ];
