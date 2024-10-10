@@ -2,6 +2,7 @@ import "./styles.css";
 import FlashCards from "./FlashCards";
 import Header from "./Header";
 import Footer from "./Footer";
+import Prize from "./Prize";
 
 export default function App() {
     return (
@@ -9,6 +10,7 @@ export default function App() {
             <Header />
             <FlashCards />
             <Footer />
+            <Prize />
         </div>
     );
 }
